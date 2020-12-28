@@ -1,21 +1,14 @@
-import React from 'react';
-import { Text, View, StatusBar, SafeAreaView } from 'react-native';
-import AppBar from './components/AppBar';
-import Divider from './components/Divider';
-
-const Container = SafeAreaView;
+import React from "react";
+import {Text,SafeAreaView} from 'react-native';
+import { NavigationContainer} from "@react-navigation/native";
 
 const App = () => {
-  return (
-    <>
-    <StatusBar/>
-    <Container>
-    <AppBar/>
-    <Divider/>
-    </Container>
-    </>
-  );
-}
+  return(
+    <SafeAreaView style={{flex:1}}>
+      <Text>
+        Buraya navigasyonu koyacağım
+      </Text>
+    </SafeAreaView>);
 
-
+};
 export default App;
