@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
+import AppBar from "../components/AppBar";
 
 const Home = ({ navigation }) => {
     return (
@@ -7,7 +8,7 @@ const Home = ({ navigation }) => {
             <Text>Anasayfa</Text>
             <Button
                 title="Hakkında Sayfasına Git"
-                onPress={() => navigation.navigate("Hakkında")} // We added an onPress event which would navigate to the About screen
+                onPress={() => navigation.navigate("Hakkında")}
             />
         </View>
     );
