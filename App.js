@@ -1,14 +1,12 @@
 import React from "react";
-import {Text,SafeAreaView} from 'react-native';
 import { NavigationContainer} from "@react-navigation/native";
+import {MainStackNavigator} from "./src/navigation/StackNavigator";
 
 const App = () => {
   return(
-    <SafeAreaView style={{flex:1}}>
-      <Text>
-        Buraya navigasyonu koyacağım
-      </Text>
-    </SafeAreaView>);
-
+    <NavigationContainer>
+        <MainStackNavigator/>
+    </NavigationContainer>
+  );
 };
 export default App;
