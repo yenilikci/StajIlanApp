@@ -29,15 +29,10 @@ class Home extends React.Component
         const {data} = this.state;
         return (
             <View style={styles.center}>
-                <Text>Anasayfa</Text>
-                <Button
-                    title="Hakkında Sayfasına Git"
-                    onPress={() => this.props.navigation.navigate("Hakkında")}
-                />
                 <FlatList
+                    style={styles.flatlist}
                     data={data}
-                    numColumns = {5}
-                    keyExtreactor = {(item) => item.id.toString()}
+                    keyExtreactor = {(item) => item.id}
                     renderItem={this._renderİtem}
                 />
             </View>
@@ -49,6 +44,9 @@ const styles = StyleSheet.create({
     center: {
         flex: 1,
     },
+    flatlist: {
+        padding: 25,
+    }
 });
 
 export default Home;
