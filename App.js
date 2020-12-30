@@ -1,13 +1,9 @@
 import React from "react";
-import { NavigationContainer} from "@react-navigation/native";
-import BottomTabNavigator from "./src/navigation/TabNavigator";
+import Route from "./src/navigation/Route";
 
 const App = () => {
-  return(
-    <NavigationContainer>
-        <BottomTabNavigator/>
-    </NavigationContainer>
-  );
-};
-
+    return(
+        <Route/>
+    );
+}
 export default App;
