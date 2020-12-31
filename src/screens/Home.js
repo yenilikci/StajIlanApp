@@ -43,9 +43,6 @@ class Home extends React.Component
 const styles = StyleSheet.create({
     center: {
         flex: 1,
-    },
-    flatlist: {
-        padding: 25,
     }
 });
 

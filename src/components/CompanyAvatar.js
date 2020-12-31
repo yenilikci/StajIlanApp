@@ -18,15 +18,15 @@ const Avatar = ({source}) => {
 
 const styles = StyleSheet.create({
     container: {
-        width: 100,
-        height: 100,
+        width: 70,
+        height: 70,
         position: 'relative'
     },
     company: {
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        borderColor: '#1777f2',
+        width: 70,
+        height: 70,
+        borderRadius: 35,
+        borderColor: '#ddd',
         borderWidth: 2
     }
 })
