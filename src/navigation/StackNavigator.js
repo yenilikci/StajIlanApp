@@ -34,7 +34,7 @@ const PrivacyStackNavigator = () => {
 const AboutStackNavigator = () => {
     return(
         <Stack.Navigator screenOptions={screenOptionStyle}>
-            <Stack.Screen name="Hakkinda" component={About}/>
+            <Stack.Screen name="Hakkında" component={About}/>
         </Stack.Navigator>
     );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {BlogStackNavigator,UserStackNavigator} from "./StackNavigator";
-import Home from "../screens/Home";
 import { Ionicons } from '@expo/vector-icons';
 
 
