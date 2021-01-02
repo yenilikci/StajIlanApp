@@ -1,5 +1,6 @@
 import React from 'react';
-import {View,Text,StyleSheet} from 'react-native';
+import {View,Text,StyleSheet,SafeAreaView} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 const Container = View;
 const TextLogo = Text;
@@ -8,11 +9,13 @@ const TextLogo = Text;
 const AppBar = () => {
 
     return(
-        <Container style={styles.container}>
-        <TextLogo style={styles.textlogo}>
-            StajİlanApp
-        </TextLogo>
-        </Container>
+        <>
+            <Container style={styles.container}>
+                <TextLogo style={styles.textlogo}>
+                    StajİlanApp
+                </TextLogo>
+            </Container>
+        </>
     )
 
 }
@@ -26,11 +29,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#3a86e9',
     },
     textlogo: {
         fontWeight: 'bold',
-        color: '#3a86e9',
+        color: '#fff',
         fontSize: 30,
     }
 })

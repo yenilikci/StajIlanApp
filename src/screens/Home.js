@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Button, Text, StyleSheet,FlatList } from "react-native";
+import { View, Button, Text, StyleSheet,FlatList,SafeAreaView,StatusBar } from "react-native";
 import axios from 'axios';
 import Item from "../components/Item";
+import AppBar from "../components/AppBar";
 
 class Home extends React.Component
 {
@@ -28,22 +29,20 @@ class Home extends React.Component
     render() {
         const {data} = this.state;
         return (
-            <View style={styles.center}>
-                <FlatList
-                    style={styles.flatlist}
-                    data={data}
-                    keyExtreactor = {(item) => item.id}
-                    renderItem={this._renderİtem}
-                />
+            <>
+                <StatusBar/>
+            <View style={{flex:1}}>
+                <AppBar/>
+                    <FlatList
+                        data={data}
+                        keyExtreactor = {(item) => item.toString()}
+                        renderItem={this._renderİtem}
+                    />
             </View>
+        </>
         );
     }
 }
 
-const styles = StyleSheet.create({
-    center: {
-        flex: 1,
-    }
-});
 
 export default Home;
