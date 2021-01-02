@@ -1,6 +1,6 @@
 import React from "react";
 import {createDrawerNavigator} from "@react-navigation/drawer";
-import {PrivacyStackNavigator} from "./StackNavigator";
+import {PrivacyStackNavigator,AboutStackNavigator} from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 
 const Drawer = createDrawerNavigator();
@@ -10,6 +10,7 @@ const DrawerNavigator = () => {
         <Drawer.Navigator>
             <Drawer.Screen name="Anasayfa" component={TabNavigator}/>
             <Drawer.Screen name="Gizlilik" component={PrivacyStackNavigator}/>
+            <Drawer.Screen name="Hakkında" component={AboutStackNavigator}/>
         </Drawer.Navigator>
     );
 }

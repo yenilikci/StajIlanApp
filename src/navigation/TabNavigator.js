@@ -1,6 +1,6 @@
 import React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import {MainStackNavigator,PrivacyStackNavigator} from "./StackNavigator";
+import {BlogStackNavigator,UserStackNavigator} from "./StackNavigator";
 import Home from "../screens/Home";
 import { Ionicons } from '@expo/vector-icons';
 
@@ -19,7 +19,7 @@ const BottomTabNavigator = () => {
               }
               else
               {
-                  iconName = focused ? 'ios-alert' : 'ios-alert';
+                  iconName = focused ? 'ios-copy' : 'ios-copy';
               }
               return <Ionicons name={iconName} size={size} color={color} />;
           }
@@ -27,15 +27,16 @@ const BottomTabNavigator = () => {
 
       tabBarOptions={{
           activeTintColor: '#3a86e9',
-          inactiveTintColor: '#000',
+          inactiveTintColor: '#010101',
           tabStyle: {
               paddingBottom: 5,
               paddingTop: 5,
           }
       }}
       >
-          <Tab.Screen options={{tabBarBadge:10}} name="Anasayfa" component={Home}></Tab.Screen>
-          <Tab.Screen name="Gizlilik" component={PrivacyStackNavigator}></Tab.Screen>
+          <Tab.Screen options={{tabBarBadge:10}} name="Anasayfa" component={UserStackNavigator}>
+          </Tab.Screen>
+          <Tab.Screen name="Blog" component={BlogStackNavigator}></Tab.Screen>
       </Tab.Navigator>
   );
 };

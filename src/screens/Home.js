@@ -35,7 +35,7 @@ class Home extends React.Component
                 <AppBar/>
                     <FlatList
                         data={data}
-                        keyExtreactor = {(item) => item.toString()}
+                        keyExtractor = {(item,index) => String(index)}
                         renderItem={this._renderİtem}
                     />
             </View>

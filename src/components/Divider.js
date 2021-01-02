@@ -17,7 +17,7 @@ const Divider = () => {
 //Divider Stilleri
 const styles = StyleSheet.create({
     dividerline: {
-        height: 5,
+        height: 3,
         backgroundColor: '#f0f2f5',
     }
 })

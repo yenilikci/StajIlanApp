@@ -2,6 +2,7 @@ import React from "react";
 import {Text, View, Image, StyleSheet, TouchableOpacity} from "react-native";
 import Avatar from "./CompanyAvatar";
 import {MaterialCommunityIcons} from "@expo/vector-icons";
+import Divider from "./Divider";
 
 const Container = View;
 const Header = View;
@@ -11,20 +12,23 @@ const Icon = View;
 const Footer = View;
 
 const Item = ({item}) =>{
+
     return(
     <Container style={styles.container}>
         <Header style={styles.header}>
             <Avatar source={item.image}/>
                 <View style={styles.left}>
                     <Text style={styles.title}>{item.title}</Text>
-                    <Text style={styles.dateTime}>5 gün önce eklendi</Text>
+                    <Text style={styles.dateTime}>{item.daysago} gün önce eklendi</Text>
                 </View>
         </Header>
         <Post style={styles.post}>
             <Text style={styles.descriptionText}>
-                {item.description}
+                {item.description.length > 250 ? item.description.substring(0,250) + '...' : item.description }
             </Text>
         </Post>
+        <Divider/>
+
         <Footer style={styles.footer}>
             <Button style={styles.buttonLocation}>
                 <Icon style={styles.icon}>
@@ -80,7 +84,8 @@ const styles = StyleSheet.create({
     },
     post : {
         backgroundColor: '#3a86e9',
-        height: 100,
+        minHeight: 100,
+        maxHeight:120,
         flexDirection: 'row',
         marginTop: 10,
         paddingHorizontal: 15,
