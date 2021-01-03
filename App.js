@@ -13,7 +13,6 @@ const App = () => {
         const {status} = await Permissions.getAsync(Permissions.NOTIFICATIONS);
         if (status != 'granted') {
             const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
-            // finalStatus = status;
         }
         if (status !== 'granted') {
             alert('Failed to get push token for push notification!');

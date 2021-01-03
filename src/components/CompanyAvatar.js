@@ -1,6 +1,5 @@
 import React from "react";
 import {View,StyleSheet,Image} from "react-native";
-import {Entypo,AntDesign,MaterialCommunityIcons} from '@expo/vector-icons'
 
 const Container = View;
 const Company = Image;
