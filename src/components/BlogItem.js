@@ -1,13 +1,10 @@
 import React from "react";
-import {Text, View, Image, StyleSheet, TouchableOpacity} from "react-native";
+import {Text, View, StyleSheet} from "react-native";
 import Divider from "./Divider";
 
 const Container = View;
 const Header = View;
 const Post = View;
-const Button = TouchableOpacity;
-const Icon = View;
-const Footer = View;
 
 const BlogItem = ({item}) =>{
 

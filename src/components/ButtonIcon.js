@@ -1,6 +1,6 @@
 import React from "react";
 import {TouchableOpacity,View,Text,StyleSheet} from "react-native";
-import {Entypo,AntDesign,MaterialCommunityIcons} from '@expo/vector-icons'
+import {AntDesign,MaterialCommunityIcons} from '@expo/vector-icons'
 
 const Button = TouchableOpacity;
 const Icon = View;

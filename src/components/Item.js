@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, View, Image, StyleSheet, TouchableOpacity} from "react-native";
+import {Text, View, StyleSheet, TouchableOpacity} from "react-native";
 import Avatar from "./CompanyAvatar";
 import {MaterialCommunityIcons} from "@expo/vector-icons";
 import Divider from "./Divider";
