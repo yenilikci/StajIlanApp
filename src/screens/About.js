@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
-import Divider from '../components/Divider';
 
 const About = () => {
     return (

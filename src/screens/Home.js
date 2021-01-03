@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Button, Text, StyleSheet,FlatList,SafeAreaView,StatusBar } from "react-native";
+import { View,FlatList,StatusBar } from "react-native";
 import axios from 'axios';
 import Item from "../components/Item";
 import AppBar from "../components/AppBar";
@@ -15,7 +15,7 @@ class Home extends React.Component
 
 
     componentDidMount(){
-        axios.get(`https://stajilan.com/api/ads/`)
+        axios.get(`https://stajilan.com/api/ads`)
             .then((res) => {
                 this.setState({data:res.data})
             })
