@@ -9,8 +9,8 @@ const DrawerNavigator = () => {
     return(
         <Drawer.Navigator>
             <Drawer.Screen name="Anasayfa" component={TabNavigator}/>
-            <Drawer.Screen name="Gizlilik" component={PrivacyStackNavigator}/>
             <Drawer.Screen name="Hakkında" component={AboutStackNavigator}/>
+            <Drawer.Screen name="Gizlilik" component={PrivacyStackNavigator}/>
         </Drawer.Navigator>
     );
 }

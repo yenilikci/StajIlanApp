@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
         flex: 1,
         marginLeft: 30,
         marginRight:30,
-        marginTop:20,
         textAlign: "center",
     },
     title: {
@@ -29,7 +28,8 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     description: {
-        fontSize: 16
+        fontSize: 16,
+        marginTop: 10
     }
 });
 
